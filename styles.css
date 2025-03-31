@@ -1,17 +1,81 @@
 div {
     width: 250px;
     height: 250px;
-    background: rgb(255, 150, 50);
+    background-color: blueviolet;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
 }
 
 p {
-    color: red;
+    color: navy;
     font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-.caja {
+.caja-uno {
     width: 150px;
     height: 150px;
-    background: rgb(25%, 10%, 50%);
+    background-color: rgb(163, 245, 69);
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.caja-dos {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 255, 255, 0.5);
+    border: 2px dashed #000;
+    margin: 10px auto;
+}
+
+.caja-tre {
+    width: 300px;
+    height: 300px;
+    background-color: #4b0082;
+    position: relative;
+}
+
+.sangre {
+    width: 150px;
+    height: 150px;
+    background-color: hsl(0, 80%, 60%, 1);
+    transform: rotate(-1deg);
+    margin: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#id {
+    background-color: coral;
+    padding: 20px;
+    font-style: italic;
+}
+
+a[title] {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+a[title]:hover {
+    font-style: italic;
+    color: lightgreen;
+}
+
+p::first-line {
+    color: black;
+}
+
+.lista1, .lista2, .lista3 {
+    width: 500px;
+    height: 500px;
 }
